@@ -12,3 +12,6 @@ I was looking for an API to use to get rosters for teams in various leagues, but
    - `npm install`
  - Run server
    - `npm start`
+
+### Access the API online
+ - Check out the api at http://sportsapi-dallinc.rhcloud.com/api/
