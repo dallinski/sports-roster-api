@@ -4,5 +4,9 @@
   "dependencies": {
     "express": "^4.13.4",
     "fs": "0.0.2"
-  }
+  },
+  "scripts": {
+    "start": "node sports-roster-server.js"
+  },
+  "main": "sports-roster-server.js"
 }

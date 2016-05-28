@@ -11,4 +11,4 @@ I was looking for an API to use to get rosters for teams in various leagues, but
  - Install dependencies for server
    - `npm install`
  - Run server
-   - `node sports-roster-server.js`
+   - `npm start`
