@@ -9,8 +9,6 @@ I was looking for an API to use to get rosters for teams in various leagues, but
    - Example: `python roster_scraper.py -s NBA`
    - This will overwrite the json file associated with that sport
  - Install dependencies for server
-   - Install node
-   - Install express (`npm install express`)
-   - Install fs (`npm install fs`)
+   - `npm install`
  - Run server
    - `node sports-roster-server.js`
