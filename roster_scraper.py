@@ -11,28 +11,28 @@ SPORTS = {
 	'NFL': {
 		'base_url': 'http://espn.go.com/nfl/teams',
 		'roster_links_selector': '.logo-nfl-medium span a[href^="/nfl/team/roster/"]',
-		'team_names_selector': '.logo-nfl-medium h5 a[href^="http://espn.go.com/nfl/team/_/name/"]',
+		'team_names_selector': '.logo-nfl-medium h5 a[href^="http://www.espn.com/nfl/team/_/name/"]',
 		'id_capture_regex': '/nfl/team/roster/_/name/(.*)/.*',
 		'json_file': 'nfl.json'
 	},
 	'NBA': {
 		'base_url': 'http://espn.go.com/nba/teams',
 		'roster_links_selector': '.logo-nba-medium span a[href^="/nba/teams/roster?team="]',
-		'team_names_selector': '.logo-nba-medium h5 a[href^="http://espn.go.com/nba/team/_/name/"]',
+		'team_names_selector': '.logo-nba-medium h5 a[href^="http://www.espn.com/nba/team/_/name/"]',
 		'id_capture_regex': '/nba/teams/roster\?team=(.*)',
 		'json_file': 'nba.json'
 	},
 	'NCAA_FOOTBALL': {
 		'base_url': 'http://espn.go.com/college-football/teams',
 		'roster_links_selector': '.medium-logos span a[href^="/ncf/teams/roster?teamId="]',
-		'team_names_selector': '.medium-logos h5 a[href^="http://espn.go.com/college-football/team/_/id/"]',
+		'team_names_selector': '.medium-logos h5 a[href^="http://www.espn.com/college-football/team/_/id/"]',
 		'id_capture_regex': '/ncf/teams/roster\?teamId=(.*)',
 		'json_file': 'ncaa_football.json'
 	},
 	'NCAA_BASKETBALL': {
 		'base_url': 'http://espn.go.com/mens-college-basketball/teams',
 		'roster_links_selector': '.medium-logos span a[href^="/ncb/teams/roster?teamId="]',
-		'team_names_selector': '.medium-logos h5 a[href^="http://espn.go.com/mens-college-basketball/team/_/id/"]',
+		'team_names_selector': '.medium-logos h5 a[href^="http://www.espn.com/mens-college-basketball/team/_/id/"]',
 		'id_capture_regex': '/ncb/teams/roster\?teamId=(.*)',
 		'json_file': 'ncaa_basketball.json'
 	},
