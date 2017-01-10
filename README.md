@@ -14,4 +14,7 @@ I was looking for an API to use to get rosters for teams in various leagues, but
    - `npm start`
 
 ### Access the API online
- - Check out the api at http://sportsapi-dallinc.rhcloud.com/api/
+ - http://sportsapi-dallinc.rhcloud.com/api/nba
+ - http://sportsapi-dallinc.rhcloud.com/api/nfl
+ - http://sportsapi-dallinc.rhcloud.com/api/ncaa_basketball
+ - http://sportsapi-dallinc.rhcloud.com/api/ncaa_football
