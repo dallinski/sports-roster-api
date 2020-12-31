@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 from datetime import date
 import os
-import urllib
-import urllib2
+import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.error, urllib.parse
 import json
 import argparse
 import re
@@ -37,14 +37,14 @@ SPORTS = {
 }
 
 def getHtml(url):
-	req = urllib2.Request(url, headers={'User-Agent' : "Magic Browser"}) 
-	return urllib2.urlopen(req)
+	req = urllib.request.Request(url, headers={'User-Agent' : "Magic Browser"}) 
+	return urllib.request.urlopen(req)
 
 def getImage(url):
 	soup = BeautifulSoup(getHtml(url), 'html.parser')
 	sub_branding_span = soup.findAll("span", { "class" : "brand-logo" })
 	img_tags = soup.select('span.brand-logo img')
-	urllib.urlretrieve(img_tags[0].get("src"), "images/" + os.path.basename(re.sub('&h=150&w=150', '', img_tags[0].get("src"))))
+	urllib.request.urlretrieve(img_tags[0].get("src"), "images/" + os.path.basename(re.sub('&h=150&w=150', '', img_tags[0].get("src"))))
 
 def get_team_id_from_url(sport, url):
 	regex = re.compile(SPORTS[sport]['id_capture_regex'])
@@ -58,7 +58,7 @@ def getImages(sport):
 	all_rosters = {}
 	i = 0
 	for url in team_names:
-		print("Scraping: " + url.contents[0])
+		print(("Scraping: " + url.contents[0]))
 		getImage(url.get("href"))
 
 def main():
